@@ -81,8 +81,6 @@ header{
 
   @media screen and (max-width:850px){
      .background-text{
-    
-    position: absolute;
     text-overflow: ellipsis;
     text-align: center;
    padding: 130px;
@@ -124,9 +122,6 @@ input{
 
 @media screen and (max-width:850px){
   
-input{
-
-}
 
  } 
 
