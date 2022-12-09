@@ -41,7 +41,7 @@ header{
       .header-div{
         border: 1px solid  #FFFFFF;
         padding: 13px;
-        width: 155px;
+       
       }
 
       .header-div > img{
@@ -50,16 +50,9 @@ header{
     
   }
 
-  
-  .background-img{
-    background: #000 url("./assets/Rectangle\ 5.png") no-repeat center center/cover;
-    height: 60vh;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
-  }
-  
 
 
+/* 
 
   .background-text{
     width: 300px;
@@ -74,14 +67,13 @@ header{
 
   .text-color{
     color:rgb(233, 167, 120)
-  }
+  } */
 
-
+/* 
   @media screen and (max-width:850px){
      .background-text{
     width: 700px;
    text-align: center;
-   margin-left: -160px;
    }
 
    .background-text > p{
@@ -89,11 +81,5 @@ header{
     color: white;
   }
 
-  
-  .background-img{
-    background: #000 url("./assets/Rectangle\ 5.png") no-repeat center center/cover;
-    height: 40vh;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
-  }
-}
+ 
+} */
