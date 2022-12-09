@@ -84,7 +84,8 @@ header{
     position: absolute;
     text-overflow: ellipsis;
     text-align: center;
-   padding: 135px;
+   padding: 130px;
+   margin-left: -10px;
    }
 
    .background-text > p{
