@@ -6,11 +6,26 @@
     overflow-x: hidden;
   }
 
+  html{
+   height: -webkit-fill-available;
+    
+  }
+
   
+  body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+   height: -webkit-fill-available;
+  }
+
+
 header{
     background-color: #292929;
     height: 105px;
   }
+
 
 
   .header-div{
@@ -18,23 +33,28 @@ header{
     padding: 15px;
     width: 185px;
     margin-left: 55px;
-   position: absolute;
+    text-align: center;
    margin-top: 15px;
   }
 
   .header-div > img{
     max-width: 60%;
-    
   }
 
-  
+
+
   @media screen and (max-width:600px){
-    .header-div{
-       align-items: center;
-       justify-content: center;
-       display: flex;
-       margin-left: 90px;
+    .center{
+           justify-items: center;
+           display: grid; 
+           align-items: center;
       }
+
+      .center > .header-div{
+        margin: 0;
+        margin-top: 10px;
+      }
+    
     
       header{
         padding:13px;
@@ -63,7 +83,6 @@ header{
 
 
   .background-text{
-   
    padding: 110px;
     
   }
@@ -81,10 +100,11 @@ header{
 
   @media screen and (max-width:850px){
      .background-text{
-    text-overflow: ellipsis;
-    text-align: center;
-   padding: 130px;
-   margin-left: -10px;
+        justify-items: center;
+        display: grid; 
+        align-items: center;
+        margin-top: 60px;
+        padding:0;
    }
 
    .background-text > p{
@@ -94,7 +114,7 @@ header{
 
   
   .background-img{
-    height: 50vh;
+    height: 40vh;
   }
   
 }  
@@ -125,4 +145,3 @@ input{
 
  } 
 
- 
