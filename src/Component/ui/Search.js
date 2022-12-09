@@ -4,7 +4,11 @@ import '../../App.css'
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <div>
+        <form>
+        <input placeholder='search movie'/>  
+        </form>
+    </div>
   )
 }
 
