@@ -21,7 +21,7 @@ const main = () => {
      }}
 
      transition={{
-        duration:1.5,
+        duration:0.5,
      }}
     className='background-img'>
 
