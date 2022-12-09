@@ -50,7 +50,14 @@ header{
     
   }
 
-
+  
+  .background-img{
+    background: #000 url("./assets/Rectangle\ 5.png") no-repeat center center/cover;
+    height: 60vh;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+  }
+  
 
 /* 
 
