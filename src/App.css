@@ -9,14 +9,14 @@
 header{
     width:100%;
     background-color: #292929;
-    padding:22px;
+    padding:20px;
   }
 
 
   .header-div{
     border: 1px solid  #FFFFFF;
     padding: 15px;
-    width: 195px;
+    width: 185px;
   }
 
 
@@ -25,7 +25,7 @@ header{
     max-width: 100%;
   }
 
-  @media screen and (max-width:700px){
+  @media screen and (max-width:850px){
     .header-div{
        align-items: center;
        justify-content: center;
@@ -34,18 +34,57 @@ header{
       }
     
       header{
-        padding:17px;
+        padding:13px;
       }
     
     
       .header-div{
         border: 1px solid  #FFFFFF;
-        padding: 15px;
-        width: 160px;
+        padding: 13px;
+        width: 155px;
       }
 
       .header-div > img{
-        max-width: 70%;
+        max-width: 65%;
       }
     
   }
+
+  
+  .background-img{
+    background: #000 url("./assets/Rectangle\ 5.png") no-repeat center center/cover;
+    height: 60vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+
+
+  .background-text{
+    width: 300px;
+   padding: 110px;
+    
+  }
+
+  .background-text > p{
+    font-size: 3.9rem;
+    color: white;
+  }
+
+  .text-color{
+    color:rgb(233, 167, 120)
+  }
+
+
+  @media screen and (max-width:850px){
+     .background-text{
+    width: 700px;
+   text-align: center;
+   margin-left: -160px;
+   }
+
+   .background-text > p{
+    font-size: 2.2rem;
+    color: white;
+  }
+}
