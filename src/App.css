@@ -167,5 +167,6 @@ input{
 @media screen and (max-width:850px){
    .center-name{
     margin-top: 100px;
+    font-size: small;
    }
   }
