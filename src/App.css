@@ -6,20 +6,6 @@
     overflow-x: hidden;
   }
 
-  html{
-   height: -webkit-fill-available;
-    
-  }
-
-  
-  body{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    height: 100vh;
-   height: -webkit-fill-available;
-  }
-
 
 header{
     background-color: #292929;
@@ -68,7 +54,7 @@ header{
     
   } 
 
-  /* header  */
+
 
 
 
@@ -138,41 +124,48 @@ input{
 }
 
 
-.search{
-    margin-top:99px;
-    position:absolute;
-    margin-left: 15%;
- }
-
-@media screen and (max-width:600px){
-    .search{
-        margin-top:99px;
-        position:absolute;
-        margin-left: 64px;
-     }
-
- } 
-
-
- .container-movie-items{
-    margin-top: 70px;
-    padding:20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
- }
-
-.movie-card-items{
-    width:15%;
-    height: 300px;
-    background-color:#000000;
-    border-radius: 6px;
-} 
 
 
 
-.card{
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
+
+.card-front{
+    padding: 5px;
+   display: flex;
+   flex-direction: column;
 }
+
+.card-front img {
+    width: 200px;
+    height: 10%;
+    border-radius: 10px;
+}
+
+
+.aslam{
+    margin-top: 30px;
+
+}
+
+
+.center-name{
+    background-color: #000;
+    padding: 30px;
+    color:rgb(233, 167, 120);
+    text-align: center;
+}
+
+.colume-name{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap:1%
+}
+
+
+
+@media screen and (max-width:850px){
+   .center-name{
+    margin-top: 100px;
+   }
+  }

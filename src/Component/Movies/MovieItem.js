@@ -1,16 +1,16 @@
 import React from 'react'
+import '../../App.css'
+
 
 const MovieItem = ({item}) => {
   return (
-    <div>
-        <div>
-       <div className='card'>
+  
+      
+      
       <div className='card-inner'>
         <div className='card-front'>
         <img src={item.Poster} alt="movie"/>
-        </div>
-        <div className='card-back'>
-          <h1>{item.name}</h1>
+        <h1>{item.Type}</h1>
           <ul>
             <li>
               <strong>year:</strong> {item.Year}
@@ -20,9 +20,6 @@ const MovieItem = ({item}) => {
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-    </div>
     </div>
   )
 }

@@ -7,22 +7,8 @@ import {motion} from "framer-motion"
 const main = () => {
   
   return (
-    <motion.div
-    initial={{
-        x:-500,
-        opacity:0,
-        scale:0.5
-     }} 
-
-     animate={{
-        x:0,
-        opacity: 1,
-        scale:1,
-     }}
-
-     transition={{
-        duration:0.5,
-     }}
+    <div
+   
     className='background-img'>
 
 
@@ -40,7 +26,7 @@ const main = () => {
  }}
 
  transition={{
-    duration:2.5,
+    duration:1.5,
  }}
     className='background-text'>
     <p>Watch something  <div className='text-color'> <Typewriter  
@@ -57,7 +43,7 @@ const main = () => {
     /> </div></p>
     
    </motion.div>
-    </motion.div>
+    </div>
   )
 }
 

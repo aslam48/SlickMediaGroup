@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../App.css'
 
 
 
 const Search = ({getQuery}) => {
-  const [text, setText] = ("")
+  const [text, setText] = useState("")
 
   const onChange = (q) => {
     setText(q)
@@ -14,7 +14,7 @@ const Search = ({getQuery}) => {
   return (
     <div>
         {/* <div><BsSearch className='search'/> */}
-        <input  type='text'  placeholder='search movie' value={text} onChange={(e) => onChange(e.target.value)} autoFocus/>  
+        <input  type='text'  placeholder='search for any  movie' value={text} onChange={(e) => onChange(e.target.value)} autoFocus/>  
        
     </div>
   )
