@@ -12,10 +12,11 @@ function App() {
     const [isLoading, setIsLoading] = useState(true)
     const [query, setQuery] = useState("")
 
+
     useEffect(()=> {
       const fechitems = async () => {
         const result = await axios("https://www.omdbapi.com/?s=transformer&apikey=2e22b3a2")
-        setItems(result.Search)
+        setItems(result.data.Search)
         setIsLoading(false)
         console.log(result.data)
     }

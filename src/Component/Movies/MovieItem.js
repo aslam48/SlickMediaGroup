@@ -13,10 +13,10 @@ const MovieItem = ({item}) => {
           <h1>{item.name}</h1>
           <ul>
             <li>
-              <strong>Actor Name:</strong> {item.Year}
+              <strong>year:</strong> {item.Year}
             </li>
             <li>
-              <strong>Nickname:</strong> {item.Title}
+              <strong>movie name:</strong> {item.Title}
             </li>
           </ul>
         </div>
