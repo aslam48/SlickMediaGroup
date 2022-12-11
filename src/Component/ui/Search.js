@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import '../../App.css'
+import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowLeft } from 'react-icons/bs';
 
 
 
@@ -13,9 +15,15 @@ const Search = ({getQuery}) => {
 
   return (
     <div>
-        {/* <div><BsSearch className='search'/> */}
-        <input  type='text'  placeholder='search for any  movie' value={text} onChange={(e) => onChange(e.target.value)} autoFocus/>  
-       
+        <input  type='text'  placeholder='search for any  movie' value={text} onChange={(e) => onChange(e.target.value)} autoFocus/>
+
+        <div className='flex-arrow'>
+        <div><BsArrowLeft className='search'/></div>
+        <p>Swipe</p>
+        <div><BsArrowRight className='search'/></div>
+        </div>
+      
+
     </div>
   )
 }

@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const MovieSlide = ({items, isLoading}) => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
