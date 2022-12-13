@@ -65,7 +65,7 @@ const MovieSlide = ({ type = "movie", title,query }) => {
           },
           mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 2,
+            items: 1,
             slidesToSlide: 2, // optional, default to 1.
           },
         }}

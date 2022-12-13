@@ -8,7 +8,7 @@ import Aslam from "./Component/ui/Aslam";
 // import { fechitems } from "./action";
 
 function App() {
-  const [query, setQuery] = useState("spiderman");
+  const [query, setQuery] = useState("after");
 
   return (
     <div className="App">
@@ -23,11 +23,11 @@ function App() {
 
       <section
         className="Carosel">
-        <MovieSlide type="movie" title={"Series"} query='transformer' />
+        <MovieSlide type="movie" title={"Series"} query='dog' />
       </section>
 
       <section
-        style={{ marginLeft: "67px", marginTop: "58px", marginBottom: "67px" }} className="Carosel">
+        className="Carosel">
         <MovieSlide type="movie" title={"Episode"} query="batman"/>
       </section>
       
