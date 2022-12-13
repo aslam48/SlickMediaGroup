@@ -1,193 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-  * {
-    box-sizing: border-box;
+header {
+  background-color: #292929;
+  height: 105px;
+}
+
+.header-div {
+  border: 1px solid #ffffff;
+  padding: 15px;
+  width: 185px;
+  margin-left: 55px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.header-div > img {
+  max-width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .center {
+    justify-items: center;
+    display: grid;
+    align-items: center;
+  }
+
+  .center > .header-div {
     margin: 0;
+    margin-top: 10px;
+  }
+
+  header {
+    padding: 13px;
+  }
+
+  .header-div {
+    border: 1px solid #ffffff;
+    padding: 13px;
+  }
+}
+
+.background-img {
+  background: #000 url("./assets/Rectangle\ 5.png") no-repeat center
+    center/cover;
+  height: 60vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-text {
+  padding: 110px;
+}
+
+.background-text > p {
+  font-size: 3.9rem;
+  color: white;
+}
+
+.text-color {
+  color: rgb(233, 167, 120);
+}
+
+@media screen and (max-width: 850px) {
+  .background-text {
+    justify-items: center;
+    display: grid;
+    align-items: center;
+    margin-top: 60px;
     padding: 0;
-    overflow-x: hidden;
   }
 
-
-header{
-    background-color: #292929;
-    height: 105px;
-  }
-
-
-
-  .header-div{
-    border: 1px solid  #FFFFFF;
-    padding: 15px;
-    width: 185px;
-    margin-left: 55px;
-    text-align: center;
-   margin-top: 15px;
-  }
-
-  .header-div > img{
-    max-width: 60%;
-  }
-
-
-
-  @media screen and (max-width:600px){
-    .center{
-           justify-items: center;
-           display: grid; 
-           align-items: center;
-      }
-
-      .center > .header-div{
-        margin: 0;
-        margin-top: 10px;
-      }
-    
-    
-      header{
-        padding:13px;
-      }
-    
-    
-      .header-div{
-        border: 1px solid  #FFFFFF;
-        padding: 13px;
-      }
-    
-  } 
-
-
-
-
-
-  
-  .background-img{
-    background: #000 url("./assets/Rectangle\ 5.png") no-repeat center center/cover;
-    height: 60vh;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-
-
-
-  .background-text{
-   padding: 110px;
-    
-  }
-
-  .background-text > p{
-    font-size: 3.9rem;
-    color: white;
-  }
-
-  .text-color{
-    color:rgb(233, 167, 120)
-  }
-   
-
-
-  @media screen and (max-width:850px){
-     .background-text{
-        justify-items: center;
-        display: grid; 
-        align-items: center;
-        margin-top: 60px;
-        padding:0;
-   }
-
-   .background-text > p{
+  .background-text > p {
     font-size: 1.8rem;
     color: white;
   }
 
-  
-  .background-img{
+  .background-img {
     height: 40vh;
   }
-  
-}  
+}
 
-
-
-
-
-input{
-    width: 71%;
-    display: flex;
-   justify-content: center;
-   margin: 0 auto;
-   margin-top: 70px;
-   padding:25px;
-   border-radius: 7px;
-   outline-color:rgb(233, 167, 120);
-   border:2px solid rgb(233, 167, 120);
-   font-size: 1.2rem;
-   color: rgb(98, 97, 97);
+input {
+  width: 71%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 25px;
+  border-radius: 7px;
+  outline-color: rgb(233, 167, 120);
+  border: 2px solid rgb(233, 167, 120);
+  font-size: 1.2rem;
+  color: rgb(98, 97, 97);
 }
 
 
-
-
-
-.card-front{
-    padding: 5px;
-   display: flex;
-   flex-direction: column;
-}
 
 .card-front img {
-    width: 200px;
-    height: 10%;
-    border-radius: 10px;
+  width: 200px;
+  height: 10%;
+  border-radius: 10px;
 }
 
-
-.aslam{
-    margin-top: 50px;
-    overflow: hidden;
+.aslam {
+  margin-top: 50px;
+  overflow: hidden;
 }
 
-
-.center-name{
-    background-color: #000;
-    padding: 30px;
-    color:rgb(233, 167, 120);
-    text-align: center;
+.center-name {
+  background-color: #000;
+  padding: 30px;
+  color: rgb(233, 167, 120);
+  text-align: center;
 }
 
-.colume-name{
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    justify-content: center;
-    gap:1%
+.colume-name {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1%;
 }
 
-
-
-@media screen and (max-width:850px){
-   .center-name{
+@media screen and (max-width: 850px) {
+  .center-name {
     margin-top: 100px;
     font-size: x-small;
-   }
   }
+}
 
-  .flex-arrow{
-display: flex;
-gap: 2%;
-justify-content: center;
-align-items: center;
-font-size: 3.3rem;
-margin-top: 30px;
-text-align: center;
-  }
+.flex-arrow {
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.3rem;
+  margin-top: 30px;
+  text-align: center;
+}
 
-  
-@media screen and (max-width:850px){
-  input{
-    padding:19px;
+@media screen and (max-width: 850px) {
+  input {
+    padding: 19px;
     font-size: small;
   }
 
-  .flex-arrow{
+  .flex-arrow {
     display: flex;
     gap: 2%;
     justify-content: center;
@@ -195,11 +157,73 @@ text-align: center;
     font-size: small;
     margin-top: 20px;
     text-align: center;
-      }
+  }
 
-  .card-front >  img{
-        max-width: 60%;
-        height:250px;
-      }
-   }
-  
+  .card-front > img {
+    max-width: 60%;
+    height: 250px;
+  }
+}
+
+.box-item1 {
+  width: 10px;
+  height: 50px;
+  background-color: black;
+  padding: 30px;
+}
+
+.card-inner{
+  position:relative;
+  width:300px;
+  height:300px;
+  margin-right: 13px;
+  border-radius: 12px;
+}
+
+
+.card-inner  img{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top:0;
+  height: 300px;
+  border-radius: 12px;
+}
+
+
+.card-overlay-container {
+  border-radius: 12px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top:0;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding:20px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.movie-title{
+  color: rgb(63, 31, 8);
+  font-weight: 900;
+  margin-top: -40px;
+  font-size: 1.4rem;
+  position: absolute;
+}
+
+
+.Carosel{
+  margin-top:58px ;
+  margin-left: 67px;
+}
+
+@media screen and (max-width: 850px) {
+.Carosel{
+  margin-left: -67px;
+}
+}

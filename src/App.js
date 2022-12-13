@@ -1,41 +1,37 @@
-import React, {useEffect, useState} from 'react' 
-import './App.css';
-import Header from './Component/ui/Header';
-import Main from './Component/ui/main';
-import Search from './Component/ui/Search';
-import MovieSlide from './Component/Movies/MovieSlide';
-import axios from 'axios';
-import Aslam from './Component/ui/Aslam';
+import React , {useState}from "react";
+import "./App.css";
+import Header from "./Component/ui/Header";
+import Main from "./Component/ui/main";
+import Search from "./Component/ui/Search";
+import MovieSlide from "./Component/Movies/MovieSlide";
+import Aslam from "./Component/ui/Aslam";
+// import { fechitems } from "./action";
 
 function App() {
-
-  const [items, setItems] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
-    const [query, setQuery] = useState("")
-
-
-    useEffect(()=> {
-      const fechitems = async () => {
-        const result = await axios(`https://www.omdbapi.com/?apikey=2e22b3a2&s=${query}`)
-        setItems(result.data.Search)
-        setIsLoading(false)
-        // console.log(result.data)
-    }
-    fechitems()
-
-    }, [query])
-
-
-    
-
+  const [query, setQuery] = useState("spiderman");
 
   return (
     <div className="App">
-    <Header/>
-    <Main/>
-    <Search getQuery={(q) => setQuery(q)}/>
-    <MovieSlide isLoading={isLoading} items={items}/>
-    <Aslam/>
+      <Header />
+      <Main />
+      <Search getQuery={(q) => setQuery(q)} />
+
+      <section
+        className="Carosel">
+        <MovieSlide type="movie" title={"Movies"} query={query} />
+      </section>
+
+      <section
+        className="Carosel">
+        <MovieSlide type="movie" title={"Series"} query='transformer' />
+      </section>
+
+      <section
+        style={{ marginLeft: "67px", marginTop: "58px", marginBottom: "67px" }} className="Carosel">
+        <MovieSlide type="movie" title={"Episode"} query="batman"/>
+      </section>
+      
+      <Aslam />
     </div>
   );
 }
