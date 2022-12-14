@@ -11,6 +11,9 @@ import { fechitems } from "../../action";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+
+
+
 const MovieSlide = ({ type = "movie", title,query }) => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +28,7 @@ const MovieSlide = ({ type = "movie", title,query }) => {
     getMovies();
   }, [getMovies]);
 
-
+  
 
   return (
     <>
@@ -81,3 +84,4 @@ const MovieSlide = ({ type = "movie", title,query }) => {
 };
 
 export default MovieSlide;
+  

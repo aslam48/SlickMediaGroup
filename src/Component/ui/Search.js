@@ -5,6 +5,7 @@ import { BsArrowLeft } from 'react-icons/bs';
 
 
 
+
 const Search = ({getQuery}) => {
   const [text, setText] = useState("")
 
@@ -12,6 +13,11 @@ const Search = ({getQuery}) => {
     setText(q)
     getQuery(q)
   }
+
+  // const updateQuery = e => query(e?.target?.value);
+
+  // const debouncingChange = debounce(updateQuery, 200)
+
 
   return (
     <div>
